@@ -1,0 +1,708 @@
+type: collection.insomnia.rest/5.0
+name: Scratch Pad
+meta:
+  id: wrk_scratchpad
+  created: 1741697075375
+  modified: 1741697075375
+collection:
+  - name: PetShop
+    meta:
+      id: fld_7310fe0b67614360a9f39c5cbbb6f2a3
+      created: 1742911175119
+      modified: 1744808575124
+      sortKey: -1742911175119
+    children:
+      - name: clientes
+        meta:
+          id: fld_d1ff00646f7c4bb18466c26963c73fec
+          created: 1742911259137
+          modified: 1742911261691
+          sortKey: -1742911179583
+      - name: pedido
+        meta:
+          id: fld_4bf3f5d53b794d08a1b1bdd205594254
+          created: 1742921117441
+          modified: 1742921119319
+          sortKey: -1742911179683
+      - name: telefone
+        meta:
+          id: fld_3b0d3e3177b8494db6f3d1e180a15ae3
+          created: 1742926772524
+          modified: 1742926775593
+          sortKey: -1742911179783
+  - name: biblioteca
+    meta:
+      id: fld_36cabb3354754ca7b78cbe9c1bfe5671
+      created: 1744808181052
+      modified: 1744808690536
+      sortKey: -1744808181052
+    children:
+      - name: aluno
+        meta:
+          id: fld_727b19ee26004c7cb4c989ce57d8c170
+          created: 1744808222402
+          modified: 1744808631515
+          sortKey: -1744808567360
+      - name: empresta
+        meta:
+          id: fld_489ab638e1db4e47a116920a512fa2c8
+          created: 1744808672898
+          modified: 1744808675921
+          sortKey: -1744808567460
+      - name: livro
+        meta:
+          id: fld_eb096964ba814ed89e86886fc3b012c9
+          created: 1744808683487
+          modified: 1744808732132
+          sortKey: -1744808567560
+  - name: Pedidos Patterns
+    meta:
+      id: fld_64b341b9dcab435ab502bdbfa3abd756
+      created: 1745930700528
+      modified: 1745930700528
+      sortKey: -1745930700528
+  - name: Taxi
+    meta:
+      id: fld_b30eefd2bcc04cb09ef8642d7f7bb686
+      created: 1746622239157
+      modified: 1746622239157
+      sortKey: -1746622239157
+    children:
+      - name: passageiros
+        meta:
+          id: fld_db4d9b53c07642b4b5ed3505e295d8a9
+          created: 1746622323767
+          modified: 1746622323767
+          sortKey: -1746622323767
+      - name: motorista
+        meta:
+          id: fld_ac6f1a0eba0f46e1a85feaccbfa8d026
+          created: 1746623444423
+          modified: 1746623633014
+          sortKey: -1746623444423
+      - name: viagem
+        meta:
+          id: fld_b58eff27c74d43b19d82b8126b460e35
+          created: 1746623599490
+          modified: 1746623599490
+          sortKey: -1746623599490
+  - name: AllWear
+    meta:
+      id: fld_b20a573e2ee748ef98205f1bfbdbf375
+      created: 1759843077922
+      modified: 1759843077922
+      sortKey: -1759843077922
+    children:
+      - name: Local
+        meta:
+          id: fld_a858a16f9a714f6cabde3ab31cf4ae27
+          created: 1759843420402
+          modified: 1759844325016
+          sortKey: -1759843420402
+        children:
+          - name: usuarios
+            meta:
+              id: fld_aed101ed2078405a9fe96e0c7874a09e
+              created: 1759843437187
+              modified: 1759843437187
+              sortKey: -1759843437187
+            children:
+              - url: http://localhost:3000/usuario
+                name: READ
+                meta:
+                  id: req_96623d8df25f422fa365b8946f95d410
+                  created: 1759843442259
+                  modified: 1759843706151
+                  isPrivate: false
+                  sortKey: -1759843442259
+                method: GET
+                headers:
+                  - name: User-Agent
+                    value: insomnia/11.1.0
+                settings:
+                  renderRequestBody: true
+                  encodeUrl: true
+                  followRedirects: global
+                  cookies:
+                    send: true
+                    store: true
+                  rebuildPath: true
+              - url: http://localhost:3000/usuario
+                name: CREATE
+                meta:
+                  id: req_008ae940d31c430b924bf171511e421b
+                  created: 1759843479979
+                  modified: 1759844632746
+                  isPrivate: false
+                  sortKey: -1759843433644
+                method: POST
+                body:
+                  mimeType: application/json
+                  text: |-
+                    {
+                      "nome":"Beatriz",
+                      "telefone":"(19)99999-9999",
+                      "email":"bia@email.com",
+                      "senha":"senha123"
+                    }
+                headers:
+                  - name: Content-Type
+                    value: application/json
+                  - name: User-Agent
+                    value: insomnia/11.1.0
+                settings:
+                  renderRequestBody: true
+                  encodeUrl: true
+                  followRedirects: global
+                  cookies:
+                    send: true
+                    store: true
+                  rebuildPath: true
+              - url: http://localhost:3000/usuario/2
+                name: UPDATE
+                meta:
+                  id: req_cc9a9020d4d141d4a733d9c57ba5fac0
+                  created: 1759843992731
+                  modified: 1759844293155
+                  isPrivate: false
+                  sortKey: -1759843429336.5
+                method: PATCH
+                body:
+                  mimeType: application/json
+                  text: |-
+                    {
+                      "nome":"Kathleen",
+                      "telefone":"(19)88888-1111",
+                      "email":"kathleen@email.com"
+                    }
+                headers:
+                  - name: Content-Type
+                    value: application/json
+                  - name: User-Agent
+                    value: insomnia/11.1.0
+                settings:
+                  renderRequestBody: true
+                  encodeUrl: true
+                  followRedirects: global
+                  cookies:
+                    send: true
+                    store: true
+                  rebuildPath: true
+              - url: http://localhost:3000/usuario/3
+                name: DELETE
+                meta:
+                  id: req_890684fc626446b9a40c747a45532039
+                  created: 1759844375028
+                  modified: 1759844384610
+                  isPrivate: false
+                  sortKey: -1759843427182.75
+                method: DELETE
+                headers:
+                  - name: User-Agent
+                    value: insomnia/11.1.0
+                settings:
+                  renderRequestBody: true
+                  encodeUrl: true
+                  followRedirects: global
+                  cookies:
+                    send: true
+                    store: true
+                  rebuildPath: true
+          - name: login
+            meta:
+              id: fld_f8884558f3744376abfb3c381f08814b
+              created: 1759843722470
+              modified: 1759843722470
+              sortKey: -1759843722470
+            children:
+              - url: http://localhost:3000/login
+                name: LOGIN
+                meta:
+                  id: req_2c9b22ca5eaf4663903675582318a9a4
+                  created: 1759843665290
+                  modified: 1759844851983
+                  isPrivate: false
+                  sortKey: -1759843730700
+                method: POST
+                body:
+                  mimeType: application/json
+                  text: |-
+                    {
+                      "email":"bia@email.com",
+                      "senha":"senha123"
+                    }
+                headers:
+                  - name: Content-Type
+                    value: application/json
+                  - name: User-Agent
+                    value: insomnia/11.1.0
+                settings:
+                  renderRequestBody: true
+                  encodeUrl: true
+                  followRedirects: global
+                  cookies:
+                    send: true
+                    store: true
+                  rebuildPath: true
+              - url: http://localhost:3000/login
+                name: VALIDAR
+                meta:
+                  id: req_6d7f00ce15824b73a12ca8b42794439b
+                  created: 1759843765432
+                  modified: 1759843772179
+                  isPrivate: false
+                  sortKey: -1759843586479.5
+                method: GET
+                headers:
+                  - name: User-Agent
+                    value: insomnia/11.1.0
+                settings:
+                  renderRequestBody: true
+                  encodeUrl: true
+                  followRedirects: global
+                  cookies:
+                    send: true
+                    store: true
+                  rebuildPath: true
+          - name: Escolha
+            meta:
+              id: fld_c2bd65154bff4594a9f5a7ab388a0fbb
+              created: 1759844646760
+              modified: 1759844646760
+              sortKey: -1759843428794.5
+            children:
+              - url: http://localhost:3000/escolha
+                name: READ
+                meta:
+                  id: req_dcbe09051f07450bbff087922194525a
+                  created: 1759844646762
+                  modified: 1759844653562
+                  isPrivate: false
+                  sortKey: -1759843442259
+                method: GET
+                headers:
+                  - name: User-Agent
+                    value: insomnia/11.1.0
+                settings:
+                  renderRequestBody: true
+                  encodeUrl: true
+                  followRedirects: global
+                  cookies:
+                    send: true
+                    store: true
+                  rebuildPath: true
+              - url: http://localhost:3000/escolha
+                name: CREATE
+                meta:
+                  id: req_f1038193d23a4a5bbc70402e850c5dc3
+                  created: 1759844646763
+                  modified: 1759845108778
+                  isPrivate: false
+                  sortKey: -1759843433644
+                method: POST
+                body:
+                  mimeType: application/json
+                  text: |-
+                    {
+                      "tipo":"blusa",
+                    	"descricao":"cazaco de manga longa de inverno",
+                      "usuarioId":1
+                    }
+                headers:
+                  - name: Content-Type
+                    value: application/json
+                  - name: User-Agent
+                    value: insomnia/11.1.0
+                settings:
+                  renderRequestBody: true
+                  encodeUrl: true
+                  followRedirects: global
+                  cookies:
+                    send: true
+                    store: true
+                  rebuildPath: true
+              - url: http://localhost:3000/escolha/2
+                name: UPDATE
+                meta:
+                  id: req_cbbfb8254e364b3eb0baf213d1353ff2
+                  created: 1759844646765
+                  modified: 1759845153167
+                  isPrivate: false
+                  sortKey: -1759843429336.5
+                method: PATCH
+                body:
+                  mimeType: application/json
+                  text: |-
+                    {
+                      "tipo":"blusa",
+                    	"descricao":"Casaco de manga longa de inverno"
+                    }
+                headers:
+                  - name: Content-Type
+                    value: application/json
+                  - name: User-Agent
+                    value: insomnia/11.1.0
+                settings:
+                  renderRequestBody: true
+                  encodeUrl: true
+                  followRedirects: global
+                  cookies:
+                    send: true
+                    store: true
+                  rebuildPath: true
+              - url: http://localhost:3000/escolha/1
+                name: DELETE
+                meta:
+                  id: req_fe30b9afad484486bdf8f19084018245
+                  created: 1759844646767
+                  modified: 1759845143035
+                  isPrivate: false
+                  sortKey: -1759843427182.75
+                method: DELETE
+                headers:
+                  - name: User-Agent
+                    value: insomnia/11.1.0
+                settings:
+                  renderRequestBody: true
+                  encodeUrl: true
+                  followRedirects: global
+                  cookies:
+                    send: true
+                    store: true
+                  rebuildPath: true
+          - url: http://localhost:3000
+            name: TESTE
+            meta:
+              id: req_cc899ded0792464288465a2fd5e9fcce
+              created: 1759843080515
+              modified: 1759845169729
+              isPrivate: false
+              sortKey: -1759843722570
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/11.1.0
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+        authentication:
+          type: bearer
+          token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiZW1haWwiOiJrYXRobGVlbkBlbWFpbC5jb20iLCJpYXQiOjE3NTk4NDQzMTEsImV4cCI6MTc1OTg0NzkxMX0.PjhkEtmSLXW4bhmV5LA5fAsnAnSXWmTCKtpzcqqbYgU
+      - name: Vercel
+        meta:
+          id: fld_d2e00d7bfe814b558b8c3a5d751c8318
+          created: 1759867370944
+          modified: 1759867493818
+          sortKey: -1759843249162
+        children:
+          - name: usuarios
+            meta:
+              id: fld_ef47c46d1464469d8481bb51e70daffe
+              created: 1759867370947
+              modified: 1759867370947
+              sortKey: -1759843437187
+            children:
+              - url: https://allwearback00.vercel.app//usuario
+                name: READ
+                meta:
+                  id: req_2dc7e2def8f94435a184de3fdd2cc2aa
+                  created: 1759867370949
+                  modified: 1759867415036
+                  isPrivate: false
+                  sortKey: -1759843442259
+                method: GET
+                headers:
+                  - name: User-Agent
+                    value: insomnia/11.1.0
+                settings:
+                  renderRequestBody: true
+                  encodeUrl: true
+                  followRedirects: global
+                  cookies:
+                    send: true
+                    store: true
+                  rebuildPath: true
+              - url: https://allwearback00.vercel.app/usuario
+                name: CREATE
+                meta:
+                  id: req_c90e985b1a97420bb9545815766fd707
+                  created: 1759867370952
+                  modified: 1759867408586
+                  isPrivate: false
+                  sortKey: -1759843433644
+                method: POST
+                body:
+                  mimeType: application/json
+                  text: |-
+                    {
+                      "nome":"Beatriz",
+                      "telefone":"(19)99999-9999",
+                      "email":"bia@email.com",
+                      "senha":"senha123"
+                    }
+                headers:
+                  - name: Content-Type
+                    value: application/json
+                  - name: User-Agent
+                    value: insomnia/11.1.0
+                settings:
+                  renderRequestBody: true
+                  encodeUrl: true
+                  followRedirects: global
+                  cookies:
+                    send: true
+                    store: true
+                  rebuildPath: true
+              - url: https://allwearback00.vercel.app/usuario/2
+                name: UPDATE
+                meta:
+                  id: req_79a7311a72c143e98466a74fbce15205
+                  created: 1759867370954
+                  modified: 1759867472042
+                  isPrivate: false
+                  sortKey: -1759843429336.5
+                method: PATCH
+                body:
+                  mimeType: application/json
+                  text: |-
+                    {
+                      "nome":"Kathleen",
+                      "telefone":"(19)88888-1111",
+                      "email":"kathleen@email.com"
+                    }
+                headers:
+                  - name: Content-Type
+                    value: application/json
+                  - name: User-Agent
+                    value: insomnia/11.1.0
+                settings:
+                  renderRequestBody: true
+                  encodeUrl: true
+                  followRedirects: global
+                  cookies:
+                    send: true
+                    store: true
+                  rebuildPath: true
+              - url: https://allwearback00.vercel.app/usuario/3
+                name: DELETE
+                meta:
+                  id: req_4525d4281d854604a9b89c92c384cbc7
+                  created: 1759867370956
+                  modified: 1759867461784
+                  isPrivate: false
+                  sortKey: -1759843427182.75
+                method: DELETE
+                headers:
+                  - name: User-Agent
+                    value: insomnia/11.1.0
+                settings:
+                  renderRequestBody: true
+                  encodeUrl: true
+                  followRedirects: global
+                  cookies:
+                    send: true
+                    store: true
+                  rebuildPath: true
+          - name: login
+            meta:
+              id: fld_aa800853c760466ea55bf3f98dcc8b0e
+              created: 1759867370958
+              modified: 1759867370958
+              sortKey: -1759843722470
+            children:
+              - url: https://allwearback00.vercel.app/login
+                name: LOGIN
+                meta:
+                  id: req_650f2be5a7e94528b47ef1609b3832c2
+                  created: 1759867370960
+                  modified: 1759867397880
+                  isPrivate: false
+                  sortKey: -1759843730700
+                method: POST
+                body:
+                  mimeType: application/json
+                  text: |-
+                    {
+                      "email":"bia@email.com",
+                      "senha":"senha123"
+                    }
+                headers:
+                  - name: Content-Type
+                    value: application/json
+                  - name: User-Agent
+                    value: insomnia/11.1.0
+                settings:
+                  renderRequestBody: true
+                  encodeUrl: true
+                  followRedirects: global
+                  cookies:
+                    send: true
+                    store: true
+                  rebuildPath: true
+              - url: https://allwearback00.vercel.app/login
+                name: VALIDAR
+                meta:
+                  id: req_760bc1a2cd204d679d8e69511035ce15
+                  created: 1759867370962
+                  modified: 1759867478890
+                  isPrivate: false
+                  sortKey: -1759843586479.5
+                method: GET
+                headers:
+                  - name: User-Agent
+                    value: insomnia/11.1.0
+                settings:
+                  renderRequestBody: true
+                  encodeUrl: true
+                  followRedirects: global
+                  cookies:
+                    send: true
+                    store: true
+                  rebuildPath: true
+          - name: Escolha
+            meta:
+              id: fld_7c5aae764143480087f4930b006daa8c
+              created: 1759867370964
+              modified: 1759867370964
+              sortKey: -1759843428794.5
+            children:
+              - url: https://allwearback00.vercel.app/escolha
+                name: READ
+                meta:
+                  id: req_23506ca15cd74c57bb23f249016ece77
+                  created: 1759867370965
+                  modified: 1759867439495
+                  isPrivate: false
+                  sortKey: -1759843442259
+                method: GET
+                headers:
+                  - name: User-Agent
+                    value: insomnia/11.1.0
+                settings:
+                  renderRequestBody: true
+                  encodeUrl: true
+                  followRedirects: global
+                  cookies:
+                    send: true
+                    store: true
+                  rebuildPath: true
+              - url: https://allwearback00.vercel.app/escolha
+                name: CREATE
+                meta:
+                  id: req_cfdb8356174f4c4cb7aadd6e65316773
+                  created: 1759867370967
+                  modified: 1759867443426
+                  isPrivate: false
+                  sortKey: -1759843433644
+                method: POST
+                body:
+                  mimeType: application/json
+                  text: |-
+                    {
+                      "tipo":"blusa",
+                    	"descricao":"cazaco de manga longa de inverno",
+                      "usuarioId":1
+                    }
+                headers:
+                  - name: Content-Type
+                    value: application/json
+                  - name: User-Agent
+                    value: insomnia/11.1.0
+                settings:
+                  renderRequestBody: true
+                  encodeUrl: true
+                  followRedirects: global
+                  cookies:
+                    send: true
+                    store: true
+                  rebuildPath: true
+              - url: https://allwearback00.vercel.app/escolha/2
+                name: UPDATE
+                meta:
+                  id: req_035f9e8bd1fb447a97b8559364e0d0fc
+                  created: 1759867370969
+                  modified: 1759867447198
+                  isPrivate: false
+                  sortKey: -1759843429336.5
+                method: PATCH
+                body:
+                  mimeType: application/json
+                  text: |-
+                    {
+                      "tipo":"blusa",
+                    	"descricao":"Casaco de manga longa de inverno"
+                    }
+                headers:
+                  - name: Content-Type
+                    value: application/json
+                  - name: User-Agent
+                    value: insomnia/11.1.0
+                settings:
+                  renderRequestBody: true
+                  encodeUrl: true
+                  followRedirects: global
+                  cookies:
+                    send: true
+                    store: true
+                  rebuildPath: true
+              - url: https://allwearback00.vercel.app/escolha/1
+                name: DELETE
+                meta:
+                  id: req_c040896029884a9282fbcbf28c85215f
+                  created: 1759867370971
+                  modified: 1759867465691
+                  isPrivate: false
+                  sortKey: -1759843427182.75
+                method: DELETE
+                headers:
+                  - name: User-Agent
+                    value: insomnia/11.1.0
+                settings:
+                  renderRequestBody: true
+                  encodeUrl: true
+                  followRedirects: global
+                  cookies:
+                    send: true
+                    store: true
+                  rebuildPath: true
+          - url: https://allwearback00.vercel.app/
+            name: TESTE
+            meta:
+              id: req_e2997f24870941158670839f26bde4b9
+              created: 1759867370973
+              modified: 1759867383108
+              isPrivate: false
+              sortKey: -1759843722570
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/11.1.0
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+        authentication:
+          type: bearer
+          token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJiaWFAZW1haWwuY29tIiwiaWF0IjoxNzU5ODY3MjA1LCJleHAiOjE3NTk4NzA4MDV9.My-RD1ZGJPJLXJ6I0oS2TiHS4IW6Ki-H-HrK3cKttcQ
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_99d30891da4bdcebc63947a8fc17f076de878684
+    created: 1741697085252
+    modified: 1741697085252
+environments:
+  name: Base Environment
+  meta:
+    id: env_99d30891da4bdcebc63947a8fc17f076de878684
+    created: 1741697085171
+    modified: 1741697085171
+    isPrivate: false
