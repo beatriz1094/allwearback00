@@ -3,6 +3,7 @@ const routes = express.Router();
 
 const Usuario = require('./controllers/usuario');
 const Login = require('./controllers/login');
+const Roupa = require('./controllers/roupa');
 const Escolha = require('./controllers/escolha');
 
 const { validate } = require('./middlewares/auth');
@@ -47,5 +48,11 @@ routes.get('/escolha', Escolha.read);
 routes.get('/escolha/:id', Escolha.readOne);
 routes.patch('/escolha/:id', Escolha.update);
 routes.delete('/escolha/:id', Escolha.remove);
+
+routes.post('/roupa', Roupa.create);
+routes.get('/roupa', Roupa.read);
+routes.get('/roupa/:id', Roupa.readOne);
+routes.patch('/roupa/:id', Roupa.update);
+routes.delete('/roupa/:id', Roupa.remove);
 
 module.exports = routes;
