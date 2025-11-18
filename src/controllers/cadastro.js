@@ -1,13 +1,24 @@
 const { PrismaClient } = require('@prisma/client');
 const prisma = new PrismaClient();
-//const bcrypt = require('bcrypt');
+const bcrypt = require('bcrypt');
+
+const encripta = async (senha) => {
+    if (!senha) return null;
+    try {
+        const salt = await bcrypt.genSalt(10);
+        const hash = await bcrypt.hash(senha, salt);
+        return hash;
+    } catch (error) {
+        console.error('Erro ao criar hash:', error);
+        throw new Error('Erro ao criar hash');
+    }
+}
 
 const create = async (req, res) => {
     try {
-        const { nome, telefone, email, senha } = req.body;
-        //const senhaHash = await bcrypt.hash(senha, 10); // Criptografa a senha
+        req.body.senha = await encripta(req.body.senha);
         const usuario = await prisma.Usuario.create({
-            data: { nome, telefone, email, senha }
+            data: req.body
         });
         res.status(201).json(usuario);
     } catch (error) {
