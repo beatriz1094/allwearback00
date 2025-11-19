@@ -54,7 +54,7 @@ async function main() {
                 "nome": "feminino",
                 "descricao": "casual",
                 "tipo": "cropped preto simples manga curta",
-                "imagemUrl": "https://i.pinimg.com/736x/4d/c5/9e/4dc59e1833d1032a536e5a96aa9ba3d6.jpg"
+                "imagemUrl": "https://i.pinimg.com/736x/,4d/c5/9e/4dc59e1833d1032a536e5a96aa9ba3d6.jpg"
             },
             {
                 "nome": "feminino",
