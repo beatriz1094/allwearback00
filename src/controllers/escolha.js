@@ -20,14 +20,27 @@ const read = async (req, res) => {
 const readOne = async (req, res) => {
     try {
         const escolha = await prisma.escolha.findUnique({
-            select: {
-                id: true,
-                tipo: true,
-                descricao: true,
-                usuario: true
-            },
             where: {
                 id: Number(req.params.id)
+            },
+            include:{
+                escolhidos:true
+            }
+        });
+        return res.json(escolha);
+    } catch (error) {
+        return res.status(400).json({ error: error.message });
+    }
+}
+
+const readUsuario = async (req, res) => {
+    try {
+        const escolha = await prisma.escolha.findMany({
+            where: {
+                usuarioId: Number(req.params.id)
+            },
+            include:{
+                escolhidos:true
             }
         });
         return res.json(escolha);
@@ -63,4 +76,4 @@ const remove = async (req, res) => {
     }
 }
 
-module.exports = { create, read, readOne, update, remove };
+module.exports = { create, read, readOne, readUsuario, update, remove };

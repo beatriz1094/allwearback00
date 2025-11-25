@@ -5,6 +5,7 @@ const Usuario = require('./controllers/usuario');
 const Login = require('./controllers/login');
 const Roupa = require('./controllers/roupa');
 const Escolha = require('./controllers/escolha');
+const Escolhido = require('./controllers/escolhido');
 
 const { validate } = require('./middlewares/auth');
 
@@ -41,18 +42,25 @@ routes.get('/usuario/:id', validate, Usuario.readOne);
 routes.patch('/usuario/:id', validate, Usuario.update);
 routes.delete('/usuario/:id', validate, Usuario.remove);
 
-
-// Rotas protegidas (exemplo: Escolha)
-routes.post('/escolha', Escolha.create);
-routes.get('/escolha', Escolha.read);
-routes.get('/escolha/:id', Escolha.readOne);
-routes.patch('/escolha/:id', Escolha.update);
-routes.delete('/escolha/:id', Escolha.remove);
-
 routes.post('/roupa', Roupa.create);
 routes.get('/roupa', Roupa.read);
 routes.get('/roupa/:id', Roupa.readOne);
 routes.patch('/roupa/:id', Roupa.update);
 routes.delete('/roupa/:id', Roupa.remove);
+
+routes.post('/escolha', Escolha.create);
+routes.get('/escolha', Escolha.read);
+routes.get('/escolha/:id', Escolha.readOne);
+routes.get('/escolhausuario/:id', Escolha.readUsuario);
+routes.patch('/escolha/:id', Escolha.update);
+routes.delete('/escolha/:id', Escolha.remove);
+
+routes.post('/escolhido', Escolhido.create);
+routes.post('/escolhidos', Escolhido.createMany);
+routes.get('/escolhido', Escolhido.read);
+routes.get('/escolhido/:id', Escolhido.readOne);
+routes.patch('/escolhido/:id', Escolhido.update);
+routes.delete('/escolhido/:id', Escolhido.remove);
+
 
 module.exports = routes;
