@@ -412,7 +412,136 @@ async function main() {
 					"descricao": "casual",
 					"tipo": "saia colada preta comprida",
 					"imagemUrl": "https://i.pinimg.com/736x/71/d3/4a/71d34a8a85cec117a88704d3430ed999.jpg"
-				}
+				},
+
+				{
+
+					"nome": "masculino",
+					"descricao": "casual",
+					"tipo": "camiseta marrom",
+					"imagemUrl": "https://i.pinimg.com/736x/d5/d7/b9/d5d7b99bf29f1df93909fa240bc5ab96.jpg"
+				},
+
+				{
+
+					"nome": "masculino",
+					"descricao": "casual",
+					"tipo": "camiseta cinza",
+					"imagemUrl": "https://i.pinimg.com/736x/cc/bb/fc/ccbbfc0ab56731678f3b7776d754ab40.jpg"
+				},
+
+				{
+
+					"nome": "masculino",
+					"descricao": "casual",
+					"tipo": "camiseta preta",
+					"imagemUrl": "https://i.pinimg.com/1200x/77/33/79/773379858d28da59d36813fca43cc980.jpg"
+				},
+
+				{
+
+					"nome": "masculino",
+					"descricao": "casual",
+					"tipo": "camiseta branca",
+					"imagemUrl": "https://i.pinimg.com/1200x/57/08/e5/5708e5d8a8dde6c552593fb4c9934eb7.jpg"
+				},
+
+				{
+
+					"nome": "masculino",
+					"descricao": "casual",
+					"tipo": "camiseta verde",
+					"imagemUrl": "https://i.pinimg.com/1200x/a9/b4/a1/a9b4a10c1cec1b1a87b78d2000171bfc.jpg"
+				},
+
+				{
+
+					"nome": "masculino",
+					"descricao": "casual",
+					"tipo": "calca jeans",
+					"imagemUrl": "https://i.pinimg.com/736x/59/cf/d0/59cfd04106c46acdb308239169ec716e.jpg"
+				},
+
+				{
+
+					"nome": "masculino",
+					"descricao": "casual",
+					"tipo": "calca preta",
+					"imagemUrl": "https://i.pinimg.com/1200x/0b/3e/64/0b3e64451bd2033f016b6d74b33e9f51.jpg"
+				},
+
+				{
+
+					"nome": "masculino",
+					"descricao": "casual",
+					"tipo": "calca jeans clara",
+					"imagemUrl": "https://i.pinimg.com/736x/9e/5b/43/9e5b4376ed7984f193aaaff5a70255c5.jpg"
+				},
+
+				{
+
+					"nome": "masculino",
+					"descricao": "casual",
+					"tipo": "calca jeans cinza",
+					"imagemUrl": "https://i.pinimg.com/1200x/2d/84/c6/2d84c6716b21d99bcb67149206d8dc46.jpg"
+				},
+
+				{
+
+					"nome": "masculino",
+					"descricao": "casual",
+					"tipo": "calca jeans listrada",
+					"imagemUrl": "https://i.pinimg.com/1200x/29/44/a9/2944a9e250626c630ee94b3a48ed81c8.jpg"
+				},
+
+				{
+
+					"nome": "masculino",
+					"descricao": "casual",
+					"tipo": "calca jeans cargo",
+					"imagemUrl": "https://i.pinimg.com/736x/dc/05/40/dc0540ddc97c038c05ac5418859ba380.jpg"
+				},
+
+				{
+
+					"nome": "masculino",
+					"descricao": "casual",
+					"tipo": "camiseta preta",
+					"imagemUrl": "https://i.pinimg.com/1200x/77/33/79/773379858d28da59d36813fca43cc980.jpg"
+				},
+
+				{
+
+					"nome": "masculino",
+					"descricao": "casual",
+					"tipo": "jaqueta puffer",
+					"imagemUrl": "https://i.pinimg.com/736x/1d/47/c8/1d47c80faf23b3097d9d35933abdf4b9.jpg"
+				},
+
+				{
+
+					"nome": "masculino",
+					"descricao": "casual",
+					"tipo": "moletom branco",
+					"imagemUrl": "https://i.pinimg.com/1200x/be/12/a1/be12a1806e99a6405a82a02942a1f0ad.jpg"
+				},
+
+				{
+
+					"nome": "masculino",
+					"descricao": "casual",
+					"tipo": "moletom verde",
+					"imagemUrl": "https://i.pinimg.com/736x/97/17/2c/97172c07c638866927ecd9f1b839429f.jpg"
+				},
+
+				{
+
+					"nome": "masculino",
+					"descricao": "casual",
+					"tipo": "moletom preto",
+					"imagemUrl": "https://i.pinimg.com/1200x/90/00/20/900020dd47516cbdc2cb54dabca7e1fc.jpg"
+				},
+				
 			],
 	})
 
